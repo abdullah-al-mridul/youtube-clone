@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-black text-white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+.glass-effect {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  backdrop-filter: blur(46px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  padding: 10px;
+}
+.glass-effect-default {
+  background: rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(42px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.bg-blur-css {
+  background: rgba(105, 104, 104, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  backdrop-filter: blur(17px);
+  border: 1px solid #1f2937 !important;
+  -webkit-backdrop-filter: blur(16px);
+}
+.bg-blur-css:hover {
+  background: rgba(105, 104, 104, 0.2);
+}
+.bg-blur-css-2 {
+  border: 1px solid transparent;
+}
+.bg-blur-css-2:hover {
+  background: rgba(105, 104, 104, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  backdrop-filter: blur(17px);
+  border: 1px solid #1f2937;
+  -webkit-backdrop-filter: blur(16px);
+}
